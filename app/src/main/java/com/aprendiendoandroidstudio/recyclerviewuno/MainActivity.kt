@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView(){
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerAnimals)
         recyclerView.layoutManager = LinearLayoutManager(this)
+//        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = AnimalAdapter(AnimalProvider.animalList)
     }
 }
